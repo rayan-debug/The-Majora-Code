@@ -497,3 +497,10 @@ html.flow .minis{display:grid;grid-template-columns:repeat(2,auto);justify-conte
 html.flow .mini-qr{gap:6px}
 html.flow .mini-qr img{width:72px;height:72px;padding:5px;border-radius:6px}
 html.flow .mini-qr span{font-size:9px;letter-spacing:.18em}
+.evt-full{font-size:14.5px;line-height:1.32}
+.evt-full th{padding:12px 10px;font-size:11px}
+.evt-full td{padding:12px 10px}
+.evt-full td:first-child{font-size:19px;line-height:1.15}
+.evt-full td:first-child small{display:block;font:500 11.5px var(--sans);letter-spacing:.04em;color:var(--mauve);margin-top:6px}
+html.flow .evt-full td{min-width:150px}
+html.flow .evt-full td:first-child{min-width:0}
