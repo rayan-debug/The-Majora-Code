@@ -310,12 +310,30 @@ input[type=range]::-moz-range-thumb{width:28px;height:28px;border-radius:50%;bac
 .banner b{font:italic 500 30px var(--serif);flex:none}
 
 /* ---------- 14 ---------- */
-.evt{width:100%;border-collapse:collapse;font-size:18px;background:rgba(255,251,249,.75);border:1px solid var(--line)}
-.evt th{font:600 12.5px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--gold);text-align:left;padding:18px 14px;border-bottom:1px solid var(--line)}
-.evt td{padding:18px 14px;border-bottom:1px solid var(--line);vertical-align:top}
-.evt td:first-child{font:500 21px var(--serif);color:var(--ink);white-space:nowrap}
 .pend{display:inline-block;border:1px dashed var(--mauve);color:var(--mauve);border-radius:4px;padding:5px 10px;font:600 12px var(--sans);letter-spacing:.12em;text-transform:uppercase;white-space:nowrap}
 .qs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:22px}
+.evg{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) 360px;gap:22px;align-items:start;height:540px}
+.evg .qs{grid-template-columns:minmax(0,1fr);gap:14px;margin:0}
+.evg .qs .card{padding:18px 22px}
+.evg .qs .card b{font-size:19px;margin-bottom:6px}
+.evg .qs .card p{font-size:16px;line-height:1.4}
+.evg .qs .meter{margin:4px 0 10px}
+.study{height:100%;padding:22px 28px 24px;border-top:4px solid var(--gold)}
+.study + .study{border-top-color:var(--mauve)}
+.study .kicker{font-size:12.5px;margin-bottom:6px}
+.study h3{font-size:30px;margin:0 0 12px;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.study h3 small{font:italic 400 18px var(--lora);text-transform:none;color:var(--mauve)}
+.stats{display:grid;grid-template-columns:auto auto 1fr;gap:0 26px;padding:12px 0 14px;margin-bottom:14px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stats div{display:flex;flex-direction:column;gap:6px;min-width:0}
+.stats b{font:500 34px/1 var(--serif);color:var(--ink);white-space:nowrap}
+.stats b i{font:italic 400 22px var(--lora);color:var(--mauve)}
+.stats span{font:600 11.5px/1.3 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.study .acc.xs{gap:6px}
+.study .acc.xs .acc-btn{padding:6px 16px;font-size:16px}
+.study .acc.xs .acc-btn .ar{font-size:18px}
+.study .acc.xs .acc-body{margin:10px 16px 12px;font-size:16px;line-height:1.5}
+.study .acc-body p{margin:0;font-size:16px;line-height:1.5}
+.study .acc-body p + p{margin-top:6px}
 .qs .card b{display:block;font:500 23px var(--serif);text-transform:uppercase;color:var(--ink);margin-bottom:10px}
 .meter{height:7px;border-radius:7px;background:var(--line);overflow:hidden;margin:6px 0 14px}
 .meter i{display:block;height:100%;width:0;background:var(--c);transition:width 1.6s var(--ease) .7s}
@@ -473,12 +491,18 @@ html.flow .rescue .card p{font-size:15px}
 html.flow .rescue .lim{font-size:13px}
 html.flow .banner{flex-direction:column;align-items:flex-start;gap:8px;font-size:15px;padding:18px 20px}
 html.flow .banner b{font-size:22px}
-html.flow .evt{display:block;overflow-x:auto;font-size:14px}
-html.flow .evt th{font-size:10px;padding:12px 10px;white-space:nowrap}
-html.flow .evt td{padding:12px 10px}
-html.flow .evt td:first-child{font-size:16px}
 html.flow .pend{font-size:10px}
 html.flow .qs .card b{font-size:17px}
+html.flow .evg{grid-template-columns:minmax(0,1fr);gap:14px;height:auto}
+html.flow .study{height:auto}
+html.flow .study .acc-body p{font-size:14px}
+html.flow .study{padding:18px 18px 20px}
+html.flow .study h3{font-size:24px}
+html.flow .stats{grid-template-columns:auto auto;justify-content:start;gap:14px 28px}
+html.flow .stats div:last-child{grid-column:1/-1}
+html.flow .stats b{font-size:26px}
+html.flow .stats b i{font-size:16px}
+html.flow .stats span{font-size:9.5px}
 html.flow .case dl{font-size:16px;gap:8px 16px}
 html.flow .case dt{font-size:10px}
 html.flow .code{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
@@ -497,10 +521,3 @@ html.flow .minis{display:grid;grid-template-columns:repeat(2,auto);justify-conte
 html.flow .mini-qr{gap:6px}
 html.flow .mini-qr img{width:72px;height:72px;padding:5px;border-radius:6px}
 html.flow .mini-qr span{font-size:9px;letter-spacing:.18em}
-.evt-full{font-size:14.5px;line-height:1.32}
-.evt-full th{padding:12px 10px;font-size:11px}
-.evt-full td{padding:12px 10px}
-.evt-full td:first-child{font-size:19px;line-height:1.15}
-.evt-full td:first-child small{display:block;font:500 11.5px var(--sans);letter-spacing:.04em;color:var(--mauve);margin-top:6px}
-html.flow .evt-full td{min-width:150px}
-html.flow .evt-full td:first-child{min-width:0}
